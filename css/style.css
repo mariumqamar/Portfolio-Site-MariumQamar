@@ -1,11 +1,19 @@
+/* colours used:
+Primary colour: #F4F1E9
+Secondary colour: #FABD19, #1E1E1E 
+*/
+
+/* Global */
 body{
     background-color: #F4F1E9;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
-    color: #1B1B1B;
+    color: #1e1e1e;
 }
+
+/* Typography */
 h1 {
     font-family: 'Bodoni Moda', serif;
     font-weight: 400;
@@ -24,20 +32,121 @@ h1 {
   
   h3 {
     font-family: 'Raleway', sans-serif;
-    /* 32 divided by 16 */
-    font-size: 2em;
+    /* 24 divided by 16 */
+    font-size: 1.5em;
     font-weight: 600;
   }
   
   h4 {
     font-family: 'Raleway', sans-serif;
-    /* 24 divided by 16 */
-    font-size: 1.5;
+    /* 20 divided by 16 */
+    font-size: 1.25em;
     font-weight: 500;
   }
   img {
     width: 100%;
   }
+
+  /*Links and Buttons*/
+  a {
+    font-weight: bold;
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FABD19
+}
+
+.button {
+    background-color:black;
+    color: #ffffff;
+    padding:10px 20px 11px 20px;
+}
+
+
+.button:hover {
+  background-color: #FABD19;
+  color: #ffffff;
+  font-weight:bold
+}
+
+
+  /*Layout Columns/Rows */
+
+  /*Header*/
+  header {
+    width: 100%;
+    padding:5px 0; /* top-bottom left-right*/
+    background-color: #FFFDF8;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    
+}
+
+.logo {
+    width: 300px;
+    float: left;
+}
+
+header nav {
+     float: right;
+    margin-top: 35px;
+}
+
+header nav ul {
+    padding: 0;
+    list-style-type: 0;
+  margin: 0;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+  /*Main*/
   main{
-    background-image:url("../img/backgroundheader.jpg") ;
+    margin-top: 100px ;
+    padding: 40px;
   }
+
+  .hero{
+    background-image:url("../img/backgroundheader.jpg") ;
+    background-repeat: no-repeat;
+      background-size:cover;
+      background-position: center;
+    padding: 240px 0;
+margin-bottom: 40px;
+text-align: center;
+  }
+
+  .about-picture {
+    height: 480px;
+    width: 500px;
+    padding: 40px;
+    margin: 0px 50px;}
+
+  /*Footers*/
+  footer{
+    background-color: #FFFDF8;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer i  {
+    font-size: 30px;
+}
+
+
+.social-contact  {
+    margin: 50px 0;
+}
+
+.social-contact a {
+margin: 0 10px;
+    
+}
