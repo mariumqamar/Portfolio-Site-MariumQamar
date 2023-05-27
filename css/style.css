@@ -4,6 +4,10 @@ Secondary colour: #FABD19, #1E1E1E
 */
 
 /* Global */
+* {
+  box-sizing: border-box;
+}
+
 body{
     background-color: #F4F1E9;
     font-family: 'Raleway', sans-serif;
@@ -50,7 +54,7 @@ h1 {
   /*Links and Buttons*/
   a {
     font-weight: bold;
-    color:black;
+    color:#1e1e1e;
     text-decoration: none;
 }
 
@@ -59,11 +63,14 @@ a:hover {
 }
 
 .button {
-    background-color:black;
+    background-color:#1e1e1e;
     color: #ffffff;
     padding:10px 20px 11px 20px;
-}
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
 
+}
 
 .button:hover {
   background-color: #FABD19;
@@ -73,11 +80,22 @@ a:hover {
 
 
   /*Layout Columns/Rows */
+  .container {
+    padding: 10px 15px;
+  }
+
+  .row {
+    margin: 25px 0; /* 40px top and bottom, 0 left and right */
+  }
+
+  #work .row {
+    margin: 40px 0; /* 40px top and bottom, 0 left and right */
+  }
 
   /*Header*/
   header {
     width: 100%;
-    padding:5px 0; /* top-bottom left-right*/
+    padding:5px 5px; /* top-bottom left-right*/
     background-color: #FFFDF8;
     position: fixed;
     top: 0;
@@ -117,10 +135,10 @@ nav ul li {
   .hero{
     background-image:url("../img/backgroundheader.jpg") ;
     background-repeat: no-repeat;
-      background-size:cover;
+      background-size:contain;
       background-position: center;
-    padding: 240px 0;
-margin-bottom: 40px;
+    padding: 270px 0 350px;
+margin-bottom: 5px;
 text-align: center;
   }
 
@@ -128,7 +146,13 @@ text-align: center;
     height: 480px;
     width: 500px;
     padding: 40px;
-    margin: 0px 50px;}
+    margin: -50px 50px;
+    float: left;
+}
+
+.b2{
+  padding:10px 40px 11px 40px;
+}
 
   /*Footers*/
   footer{
@@ -139,6 +163,7 @@ text-align: center;
 
 footer i  {
     font-size: 30px;
+    margin:0 10px
 }
 
 
@@ -147,6 +172,6 @@ footer i  {
 }
 
 .social-contact a {
-margin: 0 10px;
+margin: 0px 10px;
     
 }
