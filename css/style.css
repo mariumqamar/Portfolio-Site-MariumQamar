@@ -11,9 +11,9 @@ Secondary colour: #FABD19, #1E1E1E
 body{
     background-color: #F4F1E9;
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.4;
     color: #1e1e1e;
 }
 
@@ -21,16 +21,16 @@ body{
 h1 {
     font-family: 'Bodoni Moda', serif;
     font-weight: 400;
-    /* 60px divided by 16 */
-    font-size: 3.75em;
+    /* 41px divided by 16 */
+    font-size: 2.56em;
     line-height: 1.32em;
   }
   
   h2 {
     font-family: 'Bodoni Moda', serif;
     font-weight: 400;
-    /* 40px divided by 16 */
-    font-size: 2.5em;
+    /* 34px divided by 16 */
+    font-size: 2.12em;
     line-height: 40px;
   }
   
@@ -80,16 +80,23 @@ a:hover {
 
 
   /*Layout Columns/Rows */
+
   .container {
-    padding: 10px 15px;
+    padding: 16px 16px;
   }
 
   .row {
-    margin: 25px 0; /* 40px top and bottom, 0 left and right */
+    margin: 24px 0; /* 24px top and bottom, 0 left and right */
   }
 
   #work .row {
     margin: 40px 0; /* 40px top and bottom, 0 left and right */
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table
   }
 
   /*Header*/
@@ -127,26 +134,36 @@ nav ul li {
 }
 
   /*Main*/
-  main{
-    margin-top: 100px ;
-    padding: 40px;
+
+  .hero-container {
+    width: 100%;
+  }
+  .hero-content {
+    padding: 200px 0px;
+    text-align: center;
   }
 
-  .hero{
-    background-image:url("../img/backgroundheader.jpg") ;
+  .hero {
+    background-image: url("../img/backgroundheader.jpg");
     background-repeat: no-repeat;
-      background-size:contain;
-      background-position: center;
-    padding: 270px 0 350px;
-margin-bottom: 5px;
-text-align: center;
+    background-size: 150%;
+    background-position: center;
+    padding: 120px 0;
+    margin-bottom: -100px;
+    min-height: 100vh;
   }
+
+  main {
+    margin-top: 100px ;
+    padding: 40px 20px;
+  }
+
 
   .about-picture {
     height: 480px;
     width: 500px;
-    padding: 40px;
-    margin: -50px 50px;
+    padding: 0px 40px 0px 10px;
+    margin-bottom: 80px;
     float: left;
 }
 
@@ -155,23 +172,100 @@ text-align: center;
 }
 
   /*Footers*/
-  footer{
+  footer {
     background-color: #FFFDF8;
-    padding: 40px 0;
+    padding: 40px 20px;
     text-align: center;
 }
 
-footer i  {
+footer i {
     font-size: 30px;
     margin:0 10px
 }
 
 
-.social-contact  {
+.social-contact {
     margin: 50px 0;
 }
 
 .social-contact a {
 margin: 0px 10px;
     
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: unset;
+      padding: 20px 0 13px;
+    }
+  
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+
+   .hero {
+      background-size: cover;
+    }
+
+    .hero span {
+      display: block;
+    }
+  
+    .col-md-6 {
+      width: 50%;
+    }
+
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+.hero {
+  background-size: cover;
+}
+  .hero span {
+    display: block;
+  }
+
+  .col-lg-7 {
+    width: 58%;
+  }
+
+  .col-lg-5 {
+    width: 41%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
 }
