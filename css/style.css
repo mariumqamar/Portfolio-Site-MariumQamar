@@ -69,13 +69,15 @@ a:hover {
     margin-top: 10px;
     margin-bottom: 20px;
     display: inline-block;
-
+    transition: 0.2s opacity;
 }
+
 
 .button:hover {
   background-color: #FABD19;
   color: #ffffff;
-  font-weight:bold
+  font-weight:bold;
+  opacity: 0.8;
 }
 
 
@@ -99,6 +101,11 @@ a:hover {
     display: table
   }
 
+  [class*="col-"] {
+    float: left;
+    padding: 20px;
+}
+
   /*Header*/
   header {
     width: 100%;
@@ -118,7 +125,7 @@ a:hover {
 
 header nav {
      float: right;
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 header nav ul {
@@ -167,8 +174,56 @@ nav ul li {
     float: left;
 }
 
-.b2{
+.b2 {
   padding:10px 40px 11px 40px;
+}
+
+.svg {
+  width: 100%;
+max-width: 100%;
+height: auto;
+}
+
+@keyframes color-change {
+  100% {fill: #1a0ff3;}
+  100% {fill: #6C63FF;}
+  100% {fill: #bbb8f0;}
+}
+
+@keyframes size-increase { 
+  from {transform:scale(1);} 
+  to {transform:scale(0.5);}
+
+}
+
+#Ellipse1 {
+  animation: 4s color-change infinite alternate linear;
+  animation: 10s size-increase infinite alternate linear;
+}
+
+#Ellipse2 {
+  animation: 4s color-change infinite alternate linear;
+  animation: 10s size-increase infinite alternate linear;
+}
+
+#Ellipse3 {
+  animation: 4s color-change infinite alternate linear;
+  animation: 10s size-increase infinite alternate linear;
+}
+
+#Ellipse4 {
+  animation: 4s color-change infinite alternate linear;
+  animation: 10s size-increase infinite alternate linear;
+}
+
+#Ellipse5 {
+  animation: 4s color-change infinite alternate linear;
+  animation: 10s size-increase infinite alternate linear;
+}
+
+#Ellipse6 {
+  animation: 4s color-change infinite alternate linear;
+  animation: 10s size-increase infinite alternate linear;
 }
 
   /*Footers*/
