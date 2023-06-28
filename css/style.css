@@ -130,7 +130,7 @@ header nav {
 
 header nav ul {
     padding: 0;
-    list-style-type: 0;
+    list-style-type: none;
   margin: 0;
     
 }
@@ -337,7 +337,7 @@ Large devices (1024px or larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 3px;
   }
 
 .hero {

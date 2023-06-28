@@ -14,16 +14,21 @@
     </head>
     <body>
         <header> 
-            <div>
+              <div class="container">
+                <div class="navtoggle" id="myNavtoggle">
             <img class="logo" src="img/logo_1x.svg" alt="Marium Qamar">
             <nav>
               <ul>
-  <li><a href="index.html">Work</a></li>
+  <li><a href="index.html#work">Work</a></li>
   <li><a href="about.html">About</a></li>
-  <li><a href="#contact">Contact</a></li>
+  <li><a href="#contact" onclick="menuToggle() ">Contact</a></li>
+  <li><a href="files/CV.pdf" target="_blank">Download CV</a></li>
+  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+    class="fas fa-bars"></i></a></li>
   </ul>
 </nav>
 </div>
+              </div>
         </header>
         <main> 
            <!-- open whole section block -->
@@ -54,11 +59,11 @@
         <!-- end row for (2) columns -->
                 <!-- open row for (1) column -->
         <div class="row">
-          <!-- open column -->
+          <!-- open first column -->
+          <div>
             <h2>Tools & Skills</h2>
             <p> User Research, A/B Testing, Prototyping, UI Design, Usability Testing and Front-End Development</p>
             <p> Figma, Adobe XD, Adobe After Effects Canva, Miro, Invision. I'm always keen on learning new platforms and tools! </p>
-            <a class="button b2" href="files/CV.pdf" target="_blank">CV</a>
         </div> 
         <!-- end column -->
       </div>

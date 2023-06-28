@@ -13,16 +13,21 @@
     </head>
     <body>
         <header> 
-            <div>
+            <div class="container">
+              <div class="navtoggle" id="myNavtoggle">
             <img class="logo" src="img/logo_1x.svg" alt="Marium Qamar">
             <nav>
               <ul>
-  <li><a href="index.html">Work</a></li>
+  <li><a href="index.html#work">Work</a></li>
   <li><a href="about.html">About</a></li>
-  <li><a href="#contact">Contact</a></li>
+  <li><a href="#contact" onclick="menuToggle() ">Contact</a></li>
+  <li><a href="files/CV.pdf" target="_blank">Download CV</a></li>
+  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+    class="fas fa-bars"></i></a></li>
   </ul>
 </nav>
 </div>
+            </div>
 </header>
         <main> 
           <!-- open whole section block -->
@@ -34,11 +39,11 @@
                       <!-- open first column -->
                         <div class="column col-md-6 col-lg-7">
                             <h2>Practice mindfulness, live mindfully</h2>
-                            <span><h3>Role</h3></span>
+                            <h3>Role</h3>
                             <p>research, user flow, wireframing, prototyping, user testing, UI/UX design</p>
-                            <span><h3>Project toolkit</h3></span>
+                            <h3>Project toolkit</h3>
                             <p>Figma & Invision</p>
-                            <span><h3>Duration</h3></span>
+                            <h3>Duration</h3>
                             <p>3 weeks • January '23</p>
                         </div>
                          <!-- end first column -->
@@ -337,8 +342,6 @@
                           <!--end row for (2) columns -->
                           </div>
                           <!-- end container/wrapper -->
-                </div>
-                <!-- end container/wrapper -->
             </div>
             <!-- end of whole section block -->
         </main>
